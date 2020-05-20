@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url('../img/fundo.jpg');*/
+    background-color: black;
+    /* background-size: auto 100vh; */
+    /* height: 100vh;  */
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 12px; */
+}
+
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+}
+
+
+@media(min-width:600px){
+    body{
+        font-size: 16px;
+    }
+}
+
+
+@media(min-width:1200px){
+    body{
+        font-size: 20px;
+    }
+}
+
+
+header{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .menu{
+    background-color: honeydew;
+    position: fixed;
+    width: 100vw;
+    top:0;
+
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    background-color: teal;
+    color: white;
+}
+ */
+a{
+    color: teal;
+    text-decoration: none;
+}
+
+.site-subtitle,
+.site-title{
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.site-subtitle{
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.site-subtitle {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.9em;
+}
+.sobre,
+.contato,
+.portfolio{
+    padding: 2em;
+} 
+
+.sobre p{
+    color: white;
+    margin-top: 1.4em;
+    margin-bottom:1.4em ;
+    text-indent: 1.4em;
+    text-align: justify;
+
+}
+
+.sobre .ultimo-paragrafo{
+    margin-top: 10%;
+    }
+
+
+.sobre a{
+    color: gold;
+    text-decoration: underline;
+    
+}
+
+.sobre a:hover{
+    background-color: darkkhaki;
+    color: firebrick;
+}
+
+.sobre .avatar{
+    float: right;
+    margin-left: 2em;
+}
+
+.sobre .avatar img{
+    /* border-radius: 50%; */
+    display: none;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top left;
+    
+}
+
+
+@media(min-width:790px){
+    .sobre .avatar img{
+        /* border-radius: 50%; */
+        display: block;
+    }
+}
+
+
+.sobre h2,
+.contato h2,
+.portfolio h2{
+ 
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue; 
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+
+}
+
+@media (min-width:1200px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+
+.flip-card {
+    height: 180px;
+    perspective: 1000px;
+  }
+  
+  .flip-card:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .card-front, 
+  .card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .7);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+
+
+  .progress-bar-html{
+    width: 210px;
+    height: 25px;
+    background-color: #ccc;
+    /* border-radius: 50em; */
+    display: flex;
+  }
+
+
+  .progress-bar-html::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    /* border-radius: 50em;  */
+    width: 10%; 
+    background-color: red;
+   
+}
+
+.progress-bar-css{
+    width: 210px;
+    height: 25px;
+    background-color: #ccc;
+    /* border-radius: 50em; */
+    display: flex;
+  }
+
+
+  .progress-bar-css::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    /* border-radius: 50em;  */
+    width: 10%; 
+    background-color: red;
+   
+}
+
+.progress-bar-java-script{
+    width: 210px;
+    height: 25px;
+    background-color: #ccc;
+    /* border-radius: 50em; */
+    display: flex;
+  }
+
+
+  .progress-bar-java-script::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    /* border-radius: 50em;  */
+    width: 5%; 
+    background-color: red;
+   
+}
+
+
+.progress-bar-php{
+    width: 210px;
+    height: 25px;
+    background-color: #ccc;
+    /* border-radius: 50em; */
+    display: flex;
+  }
+
+
+  .progress-bar-php::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    /* border-radius: 50em;  */
+    width: 5%; 
+    background-color: red;
+   
+}
+
+
+.progress-bar-git{
+    width: 210px;
+    height: 25px;
+    background-color: #ccc;
+    /* border-radius: 50em; */
+    display: flex;
+  }
+
+
+  .progress-bar-git::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    /* border-radius: 50em;  */
+    width: 10%; 
+    background-color: red;
+   
+}
+
+
+
+
+.portfolio .grid{
+    display: grid;
+    gap: 2em;
+} 
+
+.portfolio figure{
+    text-align: center;
+}
+
+
+.img-portfolio{
+    height: 180px;
+    width: 280px;
+    object-fit: cover;
+    object-position: top left;
+}
+
+@media (min-width: 400px) {
+    .img-portfolio{
+        width: 350px;
+    }
+    .img-portfolio{
+        object-position: top;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .img-portfolio{
+        width: 375px;
+    }
+    .img-portfolio{
+        object-position: top;
+    }
+      
+
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 244px 244px;
+    }
+    
+    .img-portfolio{
+        width: 245px;
+    }
+
+    .img-portfolio{
+        object-position: left;
+    }
+    
+  }
+ 
+  @media (min-width: 600px) {
+    .portfolio .grid {
+      
+      justify-content: center;
+      
+    }
+    
+      
+  } 
+
+   @media (min-width: 900px) {
+    .portfolio .grid {
+      grid-template-columns: 246px 246px 246px;
+      justify-content: center;
+    }
+    
+    .img-portfolio{
+        width: 260px;
+    }
+    
+  }
+
+  @media (min-width: 990px) {
+    .portfolio .grid {
+      grid-template-columns: 250px 250px 250px;
+      justify-content: center;
+    }
+    
+    .img-portfolio{
+        width: 250px;
+    }
+    
+  }
+
+
+  @media (min-width: 1000px) {
+    .portfolio .grid {
+      grid-template-columns: 264px 264px 264px;
+      justify-content: center;
+    }
+    
+    .img-portfolio{
+        width: 270px;
+    }
+    
+  }
+
+
+.contato a{
+    color: whitesmoke;
+    font-size: 2em;
+}
+.contato a:active,
+.contato a:hover{
+    text-shadow:0px 0px 10px yellow;
+}

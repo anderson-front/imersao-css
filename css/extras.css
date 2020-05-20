@@ -1,0 +1,48 @@
+/* h1{
+    margin: 20px;
+    border: 2px solid tomato;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 145px 0px 0px 0px turquoise,
+                0 145px  tomato, 
+                145px 145px, 0px 290px burlywood,
+                145px 290px chartreuse;
+    box-sizing: border-box;            
+
+
+} */
+
+
+
+
+.progress-bar{
+    width: 200px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50em;
+    display: flex;
+  }
+
+
+  .progress-bar::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    border-radius: 50em;  
+    width: 10%;
+    background-color: red;
+   
+    
+  }
+
+  .progress-bar span::after{
+    content: "";
+       
+    
+    
+  }
+
+
