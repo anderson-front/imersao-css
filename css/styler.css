@@ -1,56 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-     
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  /* background-image: url('../img/fundo.jpg');*/
+  background-color:  #fff;
+  /* background-size: auto 100vh; */
+  /* height: 100vh;  */
+  font-family: "Open Sans", sans-serif;
+  /* font-size: 12px; */
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
   }
+}
 
-  img{
-    max-width: 100%;
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
   }
-
-body{
-    /* background-image: url('../img/fundo.jpg');*/
-    background-color: black;
-    /* background-size: auto 100vh; */
-    /* height: 100vh;  */
-    font-family: 'Open Sans', sans-serif;
-    /* font-size: 12px; */
 }
 
-@media(min-width:400px){
-    body{
-        font-size: 14px;
-    }
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
 
-
-@media(min-width:600px){
-    body{
-        font-size: 16px;
-    }
-}
-
-
-@media(min-width:1200px){
-    body{
-        font-size: 20px;
-    }
-}
-
-
-.cabecalho{
-  height: 40vh;
+.cabecalho {
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: royalblue;
   width: 100%;
- 
 }
 
-.logo{
+.logo {
   font-size: 0;
 }
 
@@ -81,267 +76,294 @@ body{
     color: white;
 }
  */
-a{
-    color: teal;
-    text-decoration: none;
+a {
+  color: teal;
+  text-decoration: none;
 }
 
 .site-subtitle,
-.site-title{
-    color: whitesmoke;
-    text-align: center;
-    
+.site-title {
+  color: #000;
+  text-align: center;
 }
 
 .site-title {
-    font-size: 4em;
-    font-family: 'Open Sans', sans-serif;
-  }
-
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+}
 
 .site-subtitle {
-    font-style: italic;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.9em;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.9em;
 }
 .sobre,
 .contato,
-.portfolio{
-    padding: 2em;
-} 
-
-.sobre p{
-    color: white;
-    margin-top: 1.4em;
-    margin-bottom:1.4em ;
-    text-indent: 1.4em;
-    text-align: justify;
-
+.portfolio {
+  padding: 2em;
 }
 
-.sobre .ultimo-paragrafo{
-    margin-top: 10%;
-    }
-
-
-.sobre a{
-    color: gold;
-    text-decoration: underline;
-    
+.sobre p {
+  color: #000;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
 }
 
-.sobre a:hover{
-    background-color: darkkhaki;
-    color: firebrick;
+.sobre .ultimo-paragrafo {
+  margin-top: 10%;
 }
 
-.sobre .avatar{
-    float: right;
-    margin-left: 2em;
+.sobre a {
+  color: gold;
+  text-decoration: underline;
 }
 
-.sobre .avatar img{
+.sobre a:hover {
+  background-color: darkkhaki;
+  color: firebrick;
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+}
+
+.sobre .avatar img {
+  /* border-radius: 50%; */
+  display: none;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+@media (min-width: 790px) {
+  .sobre .avatar img {
     /* border-radius: 50%; */
-    display: none;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: top left;
-    
+    display: block;
+  }
 }
-
-
-@media(min-width:790px){
-    .sobre .avatar img{
-        /* border-radius: 50%; */
-        display: block;
-    }
-}
-
 
 .sobre h2,
 .contato h2,
-.portfolio h2{
- 
-    font-family: 'Open Sans', sans-serif;
-    color: aliceblue; 
-    margin-bottom: 1.5em;
-    font-size: 1.1em;
-
+.portfolio h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
 }
 
-@media (min-width:1200px){
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1200px;
-    }
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
 }
 
-.portfolio .grid{
+.portfolio .grid {
   display: grid;
   gap: 2em;
-} 
+  justify-content: center;
+}
 
-
-
-.card-php-intro{
-  height: 120px;
+.card-php-intro {
+  height: 130px;
   width: 275px;
   background-color: #a575ef;
   color: antiquewhite;
 }
 
-.card-php-intro .avatar-card{
+.card-php-intro .avatar-card {
   display: flex;
   margin-top: 35px;
   margin-left: 10px;
 }
 
-.card-php-avancando{
-  height: 120px;
+.card-php-avancando {
+  height: 130px;
   width: 275px;
   background-color: #d479e2;
   color: antiquewhite;
 }
 
-.card-php-avancando .avatar-card{
+.card-php-avancando .avatar-card {
   display: flex;
   margin-top: 35px;
   margin-left: 10px;
 }
 
-.card-php-colecoes{
-  height: 120px;
+.card-php-colecoes {
+  height: 130px;
   width: 275px;
   background-color: #ce5252;
   color: antiquewhite;
 }
 
-.card-php-colecoes .avatar-card{
+.card-php-colecoes .avatar-card {
   display: flex;
   margin-top: 35px;
   margin-left: 10px;
 }
 
-.card-php-OO1{
+.card-php-OO1 {
   height: 120px;
   width: 275px;
   background-color: #b691f1;
   color: antiquewhite;
 }
 
-.card-php-OO1 .avatar-card{
+.card-php-OO1 .avatar-card {
   display: flex;
   margin-top: 35px;
   margin-left: 10px;
 }
 
-.card-php-OO2{
+.card-php-OO2 {
   height: 120px;
   width: 275px;
   background-color: #00b3d1;
   color: antiquewhite;
 }
 
-.card-php-OO2 .avatar-card{
+.card-php-OO2 .avatar-card {
   display: flex;
   margin-top: 35px;
   margin-left: 10px;
 }
 
-
-
-
-.img-portfolio{
+.img-portfolio {
   width: 40px;
   height: 43px;
-  
 }
 
-.avatar-p{
+.avatar-p {
+  font-size: 0.9em;
+  margin-left: 5px;
+  margin-right: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.certificado{
+  display: flex;
+  margin-top: 10px;
+}
+
+.img-certificado{
+  width: 35px;
+  height: 35px;
+}
+
+.certificado p{
   font-size: 0.7em;
-  margin-left: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-
+a{
+  text-decoration: none;
+  color: #c5d2db;
+} 
 
 @media (min-width: 400px) {
-  
-    .portfolio h2{
- 
-      font-size: 1.2em;
-  
-  }
+  .portfolio h2 {
+    font-size: 1.2em;
   }
 
-  @media (min-width: 500px) {
-   
-    
-    .portfolio h2{
-       
-      font-size: 1.3em;
-  
-  }
-
-  }
-
-  @media (min-width: 560px) {
-    .portfolio .grid {
-      grid-template-columns: 244px 244px;
-    }
-    
- 
-    
-  }
- 
-  @media (min-width: 600px) {
-    .portfolio .grid {
-      
-      justify-content: center;
-      
-    }
-    
-      
-  } 
-
-   @media (min-width: 900px) {
-    .portfolio .grid {
-      grid-template-columns: 246px 246px 246px;
-      justify-content: center;
-    }
-    
-    
-    
-  }
-
-  @media (min-width: 990px) {
-    .portfolio .grid {
-      grid-template-columns: 250px 250px 250px;
-      justify-content: center;
-    }
-    
-   
-    
-  }
-
-
-  @media (min-width: 1000px) {
-    .portfolio .grid {
-      grid-template-columns: 264px 264px 264px;
-      justify-content: center;
-    }
-    
-       
-  }
-
-
-.contato a{
-    color: whitesmoke;
-    font-size: 2em;
 }
-.contato a:active,
-.contato a:hover{
-    text-shadow:0px 0px 10px yellow;
+
+@media (min-width: 500px) {
+  .portfolio h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 560px) {
+
+  .card-php-colecoes {
+    width: 209px;
+  }
+  .card-php-intro {
+    width: 209px;
+  }
+  .card-php-avancando {
+    width: 209px;
+  }
+  .card-php-OO1 {
+    width: 209px;
+  }
+  .card-php-OO2 {
+    width: 209px;
+  }
+  .portfolio .grid {
+    grid-template-columns: 239px 218px;
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio .grid {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 700px) {
+  
+  .card-php-colecoes {
+    width: 275px;
+  }
+  .card-php-intro {
+    width: 275px;
+  }
+  .card-php-avancando {
+    width: 275px;
+  }
+  .card-php-OO1 {
+    width: 275px;
+  }
+  .card-php-OO2 {
+    width: 275px;
+  }
+  .portfolio .grid {
+    grid-template-columns: 270px 295px;
+  }
+}
+
+@media (min-width: 900px) {
+  .portfolio .grid {
+    grid-template-columns: 246px 246px 246px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 990px) {
+  .portfolio .grid {
+    grid-template-columns: 250px 250px 250px;
+    justify-content: center;
+  }
+  .avatar-p {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolio .grid {
+    grid-template-columns: 264px 264px 264px;
+    justify-content: center;
+  }
+}
+
+.contato{
+  background-color:royalblue;
+  width: 100%;
+ 
+  
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 2em;
+  
 }
