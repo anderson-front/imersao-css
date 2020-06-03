@@ -81,8 +81,8 @@ a {
   text-decoration: none;
 }
 
-.site-subtitle,
-.site-title {
+.site-subtitle
+ {
   color: #000;
   text-align: center;
 }
@@ -90,6 +90,7 @@ a {
 .site-title {
   font-size: 2em;
   font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 
 .site-subtitle {
@@ -111,13 +112,18 @@ a {
   text-align: justify;
 }
 
+.sociais a{
+  color: red;
+}
+
+
 .sobre .ultimo-paragrafo {
   margin-top: 10%;
 }
 
 .sobre a {
-  color: gold;
-  text-decoration: underline;
+  color: cadetblueazure;
+  align-contenttext-decoration: underline;
 }
 
 .sobre a:hover {
@@ -147,12 +153,18 @@ a {
 }
 
 .sobre h2,
-.contato h2,
 .portfolio h2 {
   font-family: "Open Sans", sans-serif;
   color: #000;
   margin-bottom: 1.5em;
-  font-size: 1.1em;
+  font-size: 1.4em;
+}
+
+.contato h2{
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
 }
 
 @media (min-width: 1200px) {
@@ -169,16 +181,27 @@ a {
   justify-content: center;
 }
 
-.card-php-intro {
+.card-alura {
   height: 130px;
   width: 275px;
   background-color: #a575ef;
   color: antiquewhite;
 }
 
+.card-php-intro {
+  height: 130px;
+  width: 275px;
+ 
+}
+
+.card-php-intro {
+  background-color: #a575ef;
+  color: antiquewhite;
+}
+
 .card-php-intro .avatar-card {
   display: flex;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
@@ -191,7 +214,7 @@ a {
 
 .card-php-avancando .avatar-card {
   display: flex;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
@@ -204,12 +227,12 @@ a {
 
 .card-php-colecoes .avatar-card {
   display: flex;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
 .card-php-OO1 {
-  height: 120px;
+  height: 130px;
   width: 275px;
   background-color: #b691f1;
   color: antiquewhite;
@@ -217,12 +240,12 @@ a {
 
 .card-php-OO1 .avatar-card {
   display: flex;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
 .card-php-OO2 {
-  height: 120px;
+  height: 130px;
   width: 275px;
   background-color: #00b3d1;
   color: antiquewhite;
@@ -230,7 +253,7 @@ a {
 
 .card-php-OO2 .avatar-card {
   display: flex;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
@@ -251,9 +274,14 @@ a {
   margin-top: 10px;
 }
 
+.certificado a{
+  font-size: 1.2em;
+}
+
 .img-certificado{
   width: 35px;
   height: 35px;
+  margin-left: 10px;
 }
 
 .certificado p{
@@ -265,12 +293,17 @@ a {
 
 a{
   text-decoration: none;
-  color: #c5d2db;
+  color: #fff;
 } 
+
+
+
+
+
 
 @media (min-width: 400px) {
   .portfolio h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
 }
@@ -283,30 +316,21 @@ a{
 
 @media (min-width: 560px) {
 
-  .card-php-colecoes {
-    width: 209px;
-  }
-  .card-php-intro {
-    width: 209px;
-  }
-  .card-php-avancando {
-    width: 209px;
-  }
-  .card-php-OO1 {
-    width: 209px;
-  }
-  .card-php-OO2 {
-    width: 209px;
-  }
-  .portfolio .grid {
-    grid-template-columns: 239px 218px;
-  }
+  .card-alura {
+    width: 246px;
+}
+.portfolio .grid {
+  grid-template-columns: 228px 249px;
+}
 }
 
 @media (min-width: 600px) {
   .portfolio .grid {
     justify-content: center;
   }
+
+
+
 }
 
 @media (min-width: 700px) {
@@ -343,9 +367,7 @@ a{
     grid-template-columns: 250px 250px 250px;
     justify-content: center;
   }
-  .avatar-p {
-    font-size: 0.7em;
-  }
+  
 }
 
 @media (min-width: 1000px) {
@@ -355,6 +377,17 @@ a{
   }
 }
 
+@media (min-width: 1200px) {
+
+  .avatar-p {
+    font-size: 0.7em;
+ 
+}
+.certificado a {
+  font-size: 1em;
+}
+
+}
 .contato{
   background-color:royalblue;
   width: 100%;
