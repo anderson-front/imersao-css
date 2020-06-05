@@ -277,6 +277,19 @@ a {
   margin-left: 10px;
 }
 
+.card-html5-css3-I{
+  height: 130px;
+  width: 275px;
+  background-color: #d7274d;
+  color: antiquewhite;
+}
+
+.card-html5-css3-I .avatar-card {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
 
 
 .img-portfolio {
