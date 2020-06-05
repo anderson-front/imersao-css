@@ -119,7 +119,14 @@ a {
 
 .sobre .ultimo-paragrafo {
   margin-top: 10%;
+  
 }
+
+.sobre .ultimo-paragrafo a {
+ color: red;
+  
+}
+
 
 .sobre a {
   color: cadetblueazure;
@@ -257,6 +264,21 @@ a {
   margin-left: 10px;
 }
 
+.card-http{
+  height: 130px;
+  width: 275px;
+  background-color: #b1ce7c;
+  color: antiquewhite;
+}
+
+.card-http .avatar-card {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+
+
 .img-portfolio {
   width: 40px;
   height: 43px;
@@ -336,19 +358,19 @@ a{
 @media (min-width: 700px) {
   
   .card-php-colecoes {
-    width: 275px;
+    width: 248px;
   }
   .card-php-intro {
-    width: 275px;
+    width: 248px;
   }
   .card-php-avancando {
-    width: 275px;
+    width: 248px;
   }
   .card-php-OO1 {
-    width: 275px;
+    width: 248px;
   }
   .card-php-OO2 {
-    width: 275px;
+    width: 248px;
   }
   .portfolio .grid {
     grid-template-columns: 270px 295px;
