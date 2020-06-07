@@ -64,17 +64,75 @@ body {
 }
 
 .cabecalho {
-  height: 10vh;
+  color: #FFF;
+
+  width: 100%;
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: #000;
+
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+
+  border-bottom: 1px solid #103D4A;
+
+  position: absolute;
+}
+
+
+.cabecalho__logo {
+  margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao {
+  text-align: center;
+}
+
+.cabecalho__link {
+  font-size: 1.1rem;
+
+  display: inline-block;
+
+  margin-right: .7rem;
+  margin-bottom: 1.25rem;
+  margin-left: .7rem;
+}
+
+.chamada  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #FFF;
+  text-align: center;
+  
+  background-color: #00161C;
+
+  padding-top: 12.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.chamada__titulo {
+  font-family: 'Montserrat', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 1.5rem;
+}
+
+.chamada__texto {
+  font-size: 1.25rem;
+  line-height: normal;
+
+  margin: 0 auto 2.5rem;
+}
+
+.chamada__botao {
   width: 100%;
 }
 
-.logo {
-  font-size: 0;
-}
 
 /* .menu{
     background-color: honeydew;
